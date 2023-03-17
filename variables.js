@@ -31,3 +31,6 @@ else {console.log("Not So Lucky!")}
 */
 
 //CODE HERE
+for(faveNum=0;faveNum<5;faveNum++){
+console.log(8)
+}
