@@ -64,7 +64,7 @@ gitAddCode = "Enter git `add --all` at the command line prompt in your local pro
 */
 
 //CODE HERE
-gitCommitDefinition = "Git commit is like a snapshot of your code at any given time"
+gitCommitDefinition = "Git commit is like a snapshot of your code at any given time saving locally and ready to be pushed to github"
 gitCommitCode= `git Commit -m "initial Commit"`
 //////////////////PROBLEM 8////////////////////
 /*
