@@ -21,16 +21,18 @@ lovesCode = true;
 */
 
 //CODE HERE
+console.log("-----PROBLEM 4-------");
+
 if (faveNum === 13){
-  console.log(13)
+  console.log(13);
 }
-else {console.log("Not So Lucky!")}
+else {console.log("Not So Lucky!")};
 //////////////////PROBLEM 5////////////////////
 /*
   Write a for loop that prints out your faveNum 5 times.
 */
 
-//CODE HERE
+// CODE HERE
 for(faveNum=0;faveNum<5;faveNum++){
 console.log(8)
 }
