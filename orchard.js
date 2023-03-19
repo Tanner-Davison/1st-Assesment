@@ -50,6 +50,8 @@ const pinkPrice = .55
 */
 
 // CODE HERE
+console.log("question 1")
+
 totalAcres=0
 
 for(let i=0;i<fujiAcres.length; i++){
@@ -74,6 +76,7 @@ console.log(totalAcres)
 */
 
 // CODE HERE
+console.log("question 2")
 
 averageDailyAcres= totalAcres/7        //Divides the Total # of Acres by days of the week
 
@@ -109,6 +112,7 @@ console.log(averageDailyAcres)
     any Math methods. 
 
 */
+console.log("Question 3")
 
 let acresLeft = 174 
 let days = 0
@@ -128,7 +132,7 @@ console.log(days)
     that list the daily amount of apples 
     picked, in tons, for each variety. 
     
-    Each acre yields 6.5 tons of apples.
+    Each acre yields 6.5 tons of apples.                    // varAcre *= 6.5 
 
     Use the variables below to store 
     your new arrays. Make sure that you
@@ -146,19 +150,23 @@ console.log(days)
 */
 
 // CODE HERE
+console.log("question 4")
 
-let fujiTons = fujiAcres.slice(0,7)            //.slice makes a replica and gives back data you chose when inputing the funciton() in this case it starts copying at Index 0 and ends at indext 7
+let fujiTons = fujiAcres.slice(0,7);               //.slice makes a replica and gives back data you chose when inputing the funciton() in this case it starts copying at Index 0 and ends at indext 7
 for(i=0;i<fujiAcres.length;i++){               // implemented a basic for loop iteration
-    fujiTons[i]*=6.5;                          //takes the total amount of fujiAcres.slice and multiplies it by 6.5 giving us the tons
+    fujiTons[i]*=6.5;                           //takes the total amount of fujiAcres.slice and multiplies it by 6.5 giving us the tons
+                                                
 }
-let galaTons = galaAcres.slice(0,7)
+let galaTons = galaAcres.slice(0,7);
 for(i=0;i<galaAcres.length;i++){
-galaTons[i]*= 6.5;
+    galaTons[i]*= 6.5;
 }
-let pinkTons = pinkAcres.slice(0,7)
+
+let pinkTons = pinkAcres.slice(0,7);
 for(i=0;i<pinkAcres.length;i++){
-pinkTons[i]*=6.5;
+    pinkTons[i]*=6.5;
 }
+
 console.log(fujiTons)
 console.log(galaTons)
 console.log(pinkTons)
@@ -184,23 +192,26 @@ console.log(pinkTons)
 */
 
 // CODE HERE 
-let fujiPounds = 0
+console.log("question 5")
+
+let fujiPounds = null;
+let galaPounds = null;
+let pinkPounds = null;
+
 for(i=0;i<fujiTons.length;i++){
-fujiPounds+=fujiTons[i]*2000
+    fujiPounds = fujiTons[i]*2000;
 }
-console.log(fujiPounds)
+console.log(fujiPounds);
 
-let galaPounds = 0
-for(i=0;i<galaAcres.length;i++){                         //for(i=0;i<galaAcres.length; i++) <-----basic array iteration
-galaPounds+= galaAcres[i]*2000                          // every iteration will times the individual [i] value by 2000 which is the formula to reflect tons
+for(i=0;i<galaTons.length;i++){                         //for(i=0;i<galaAcres.length; i++) <-----basic array iteration
+    galaPounds = galaTons[i]*2000;                          // every iteration will times the individual [i] value by 2000 which is the formula to reflect tons
 }
-console.log(galaPounds)
+console.log(galaPounds);
 
-let pinkPounds = 0
-for(i=0;i<pinkAcres.length;i++){
-    pinkPounds+= pinkAcres[i]*2000
+for(i=0;i<pinkTons.length;i++){
+    pinkPounds = pinkTons[i]*2000;
 }
-console.log(pinkPounds)
+console.log(pinkPounds);
 
 
 
@@ -225,6 +236,8 @@ console.log(pinkPounds)
 */
 
 // CODE HERE
+
+console.log("question 6")
 
 let fujiProfit = (fujiPounds*fujiPrice)          //Declaring the variable fujiProfit to the total sum of FujiPounds+FujiPrice
 console.log(fujiProfit)
@@ -251,6 +264,8 @@ console.log(pinkProfit)
 */
 
 // CODE HERE
+console.log("question 7")
+
 let totalProfit= (fujiProfit+galaProfit+pinkProfit) // Total Profit is declared to equal the sum of All 3 profit categories added together giving us a total sum
 
 console.log(totalProfit)
